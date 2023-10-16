@@ -13,7 +13,6 @@ import StyledHero from "../Components/StyledHero/StyledHero";
 export default class SingleRoom extends Component {
   constructor(props) {
     super(props);
-    // console.log(this.props);
     this.state = {
       slug: this.props.match.params.slug,
       defaultBcg,
@@ -21,7 +20,6 @@ export default class SingleRoom extends Component {
   }
 
   static contextType = RoomContext;
-  // componentDidMount() {}
 
   render() {
     const { getRoom } = this.context;
